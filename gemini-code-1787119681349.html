@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>代表紹介 | K&Y GOLF STUDIO</title>
+  <style>
+    :root { --primary-green: #0a2f1d; --ocean-blue: #0f3854; --accent-gold: #c5a059; --bg-light: #f7f9fa; --text-dark: #222; --text-light: #fff; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Helvetica Neue", Arial, sans-serif; color: var(--text-dark); background: var(--bg-light); line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+    
+    header { position: sticky; top: 0; z-index: 100; background: rgba(10,47,29,0.95); border-bottom: 2px solid var(--accent-gold); padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; }
+    .logo { color: var(--text-light); font-size: 1.5rem; font-weight: bold; }
+    .logo span { color: var(--accent-gold); }
+    nav ul { display: flex; list-style: none; gap: 1.2rem; }
+    nav a { color: var(--text-light); font-size: 0.95rem; }
+    nav a:hover, nav a.active { color: var(--accent-gold); font-weight: bold; }
+    
+    .page-title { background: var(--ocean-blue); color: var(--text-light); text-align: center; padding: 3rem 1rem; }
+    section { padding: 4rem 5%; max-width: 900px; margin: 0 auto; }
+    
+    /* プロフィールレイアウト */
+    .profile-box { background: #fff; padding: 2.5rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; }
+    .profile-img { flex: 1 1 300px; text-align: center; }
+    .profile-img img { width: 100%; max-width: 320px; height: auto; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); border: 3px solid var(--accent-gold); }
+    .profile-text { flex: 1 1 300px; }
+    .profile-text h2 { color: var(--primary-green); margin-bottom: 0.2rem; font-size: 1.8rem; }
+    .profile-text .subtitle { color: var(--ocean-blue); font-weight: bold; margin-bottom: 1.5rem; }
+    
+    footer { background: var(--primary-green); color: var(--text-light); text-align: center; padding: 2rem 1rem; margin-top: 3rem; border-top: 3px solid var(--accent-gold); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">K&Y <span>GOLF STUDIO</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="about.html" class="active">代表紹介</a></li>
+        <li><a href="price.html">料金プラン</a></li>
+        <li><a href="access.html">アクセス</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="page-title">
+    <h1>代表・プロインストラクター紹介</h1>
+  </div>
+
+  <section>
+    <div class="profile-box">
+      <!-- 挿入した画像部分 -->
+      <div class="profile-img">
+        <img src="profile.jpg" alt="宮川勝大 代表">
+      </div>
+      
+      <div class="profile-text">
+        <h2>宮川 勝大</h2>
+        <p class="subtitle">K&Y GOLF STUDIO 代表インストラクター</p>
+        <p>皆様のゴルフライフを豊かにするため、お一人おひとりのレベル・骨格に合わせた指導を追求しています。</p>
+        <br>
+        <p>当スクールではジュニア指導において<strong>「全国大会上位進出」</strong>などの実績を持つジュニアゴルファーを多数輩出してまいりました。</p>
+        <br>
+        <p>初心者の方から、さらなる高みを目指すアスリートゴルファーまでお気軽にご相談ください。</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 K&Y GOLF STUDIO</p>
+  </footer>
+
+</body>
+</html>
