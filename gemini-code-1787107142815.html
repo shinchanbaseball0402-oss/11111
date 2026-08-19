@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>料金プラン | K&Y GOLF STUDIO</title>
+  <style>
+    :root { --primary-green: #0a2f1d; --ocean-blue: #0f3854; --accent-gold: #c5a059; --bg-light: #f7f9fa; --text-dark: #222; --text-light: #fff; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "Helvetica Neue", Arial, sans-serif; color: var(--text-dark); background: var(--bg-light); line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+    header { position: sticky; top: 0; z-index: 100; background: rgba(10,47,29,0.95); border-bottom: 2px solid var(--accent-gold); padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; }
+    .logo { color: var(--text-light); font-size: 1.5rem; font-weight: bold; }
+    .logo span { color: var(--accent-gold); }
+    nav ul { display: flex; list-style: none; gap: 1.2rem; }
+    nav a { color: var(--text-light); font-size: 0.95rem; }
+    nav a:hover, nav a.active { color: var(--accent-gold); font-weight: bold; }
+    .page-title { background: var(--ocean-blue); color: var(--text-light); text-align: center; padding: 3rem 1rem; }
+    section { padding: 4rem 5%; max-width: 1100px; margin: 0 auto; }
+    .price-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+    .price-card { background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+    .price-head { background: var(--primary-green); color: #fff; padding: 1.5rem; text-align: center; }
+    .price-head.blue { background: var(--ocean-blue); }
+    .price-head.gold { background: var(--accent-gold); color: var(--primary-green); }
+    .price-body { padding: 2rem; }
+    .price-item { display: flex; justify-content: space-between; padding: 0.8rem 0; border-bottom: 1px dashed #eee; }
+    .price-num { font-weight: bold; color: var(--ocean-blue); font-size: 1.1rem; }
+    footer { background: var(--primary-green); color: var(--text-light); text-align: center; padding: 2rem 1rem; margin-top: 3rem; border-top: 3px solid var(--accent-gold); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">K&Y <span>GOLF STUDIO</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="about.html">代表紹介</a></li>
+        <li><a href="price.html" class="active">料金プラン</a></li>
+        <li><a href="access.html">アクセス</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="page-title">
+    <h1>料金プラン（PRICE）</h1>
+    <p style="margin-top:0.5rem;">ライフスタイルや目標に合わせて選べる明確な料金体系をご案内します</p>
+  </div>
+
+  <section>
+    <div class="price-grid">
+      <div class="price-card">
+        <div class="price-head"><h3>一般コース</h3></div>
+        <div class="price-body">
+          <div class="price-item"><span>1時間レッスン</span><span class="price-num">4,000円</span></div>
+          <div class="price-item"><span>3回券</span><span class="price-num">11,000円</span></div>
+          <div class="price-item"><span>5回券</span><span class="price-num">17,000円</span></div>
+        </div>
+      </div>
+      <div class="price-card">
+        <div class="price-head blue"><h3>ジュニアコース</h3></div>
+        <div class="price-body">
+          <div class="price-item"><span>1時間レッスン</span><span class="price-num">3,000円</span></div>
+          <div class="price-item"><span>3回券</span><span class="price-num">8,000円</span></div>
+          <div class="price-item"><span>5回券</span><span class="price-num">13,000円</span></div>
+        </div>
+      </div>
+      <div class="price-card">
+        <div class="price-head gold"><h3>通い放題プラン</h3></div>
+        <div class="price-body">
+          <p style="font-size:0.85rem; color:#666; text-align:center; margin-bottom:1rem;">※ジュニア限定プラン</p>
+          <div class="price-item" style="border:none; text-align:center; display:block;">
+            <span>月額定額料金</span><br>
+            <span class="price-num" style="font-size:1.8rem; color:var(--primary-green);">15,000円 / 月</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 K&Y GOLF STUDIO</p>
+  </footer>
+
+</body>
+</html>
